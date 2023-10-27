@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<title>Imperial Store</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrusel.css">
+</head>
+<script>
+    function stickyMenu(){
+        var sticky = document.getElementById('sticky');
+        if(window.pageYOffset > 220){
+            sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+        }
+    }
+    window.onscroll = function(){
+        stickyMenu();
+    }
+</script>
+<body style="background-color: darkseagreen;">
+	    <div class="parallax">
+	        <div class="page-title">Imperial Store</div>
+	    </div>
+	    <div class="menu" id="sticky">
+	        <ul class="menu-ul">
+	            <a href="#home" class="a-menu"><li>Inicio</li></a>
+	            <a href="#deals" class="a-menu"><li>Descuentos</li></a>
+	            <a href="#vegetables" class="a-menu"><li>Verduras</li></a>
+	            <a href="#fruits" class="a-menu"><li>Frutas</li></a>
+	            <a href="#meat" class="a-menu"><li>Carnicería</li></a>
+	            <a href="#" class="a-menu"><li>Carrito de Compras</li></a>
+	        </ul>
+	        <div class="search-box">
+	             <form>
+	                 <input type="text" placeholder="Buscar..." name="search" class="search-input"/>
+	                 <button type="submit"><img src="../images/search.png"></button>
+                     
+	             </form>
+	        </div>
+	    </div>
+    <!--	    Home page Begins-->
+    <div>
+    <div class="carousel">
+        <div class="carousel-controls">
+          <input id="1" type="radio" name="controls" checked />
+          <input id="2" type="radio" name="controls" />
+          <input id="3" type="radio" name="controls" />
+          <input id="4" type="radio" name="controls" />
+          <input id="5" type="radio" name="controls" />
+          <input id="6" type="radio" name="controls" />
+          <div class="dots">
+            <label for="1"></label>
+            <label for="2"></label>
+            <label for="3"></label>
+            <label for="4"></label>
+            <label for="5"></label>
+            <label for="6"></label>
+          </div>
+          <div class="carousel-images">
+            <img src="../images/footer_background.jpg" />
+            <img src="../images/frutas.jpg" />
+            <img src="../images/verduras.jpg" />
+            <img src="../images/apples.jpg" />
+            <img src="../images/carrots.jpg" />
+            <img src="../images/strawberries.jpg" />
+          </div>
+        </div>
+      </div>
+      </div>
+           <!-- <div class="container">
+
+
+            <a href="#vegetables">
+                <div class="categories">
+                    <img src="../images/verduras.jpg" class="item-image">
+                    <div class="image-title">Verduras</div>
+                </div>
+            </a>
+            <a href="#fruits">
+                <div class="categories">
+                    <img src="../images/frutas.jpg" class="item-image">
+                    <div class="image-title">Frutas</div>
+                </div>
+            </a>
+            <a href="#meat">
+                <div class="categories">
+                    <img src="../images/carne.jpg" class="item-image">
+                    <div class="image-title">Carne y Mariscos</div>
+                </div>
+            </a>
+            <a href="#deals">
+                <div class="categories">
+                    <img src="../images/cupones.jpg" class="item-image">
+                    <div class="image-title">Descuentos</div>
+                </div>
+            </a>
+        </div>
+        Deal Begins-->
+        <div class="deals-container" id="deals">
+            <div class="parallax">
+                <div class="title">OFERTAS</div>
+            </div>
+            <div class="deal">
+                Ahorra un 20% en la compra de $149 en verduras.<br/>
+                <button class="coupan-btn">
+                    Usar Cupón
+                </button>
+            </div>
+            <div class="deal">
+                Ahorra un 10% en la compra de $179 en frutas.<br/>
+                <button class="coupan-btn">
+                    Usar Cupón
+                </button>
+            </div>
+            <div class="deal">
+                Ahorra un 15% en la compra de $199 en carne y/o mariscos.<br/>
+                <button class="coupan-btn">
+                    Usar Cupón
+                </button>
+            </div>
+            <div class="deal">
+                Ahorra hasta un 10% en la compra de $499 o más en todo los productos de tu carrito.<br/>
+                <button class="coupan-btn">
+                    Usar Cupón
+                </button>
+            </div>
+            <div class="deal">
+                Ahorra un 35% en la compra de $1990 o más en tu compra de todos los departamentos.<br/>
+                <button class="coupan-btn">
+                    Usar Cupón
+                </button>
+            </div>
+        </div>
+        <div class="boton">
+            <a href="cupones.html">
+                <button class="butnow-btn">Ver todos los Cupones y Descuentos</button></a>
+        </div>
+        <!--Deal End-->
+        <!--Veg begin-->
+        <div class="deals-container" id="vegetables">
+            <div class="parallax">
+                <div class="title">VERDURAS</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/jitomate.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Jitomate rojo</b><br/>
+                    <div class="item-select">
+                        Precio : $17.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/greenpaper.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Pimiento Verde</b><br/>
+                    <div class="item-select">
+                        Precio : $23.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/tomato.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Tomate Orgánico</b><br/>
+                    <div class="item-select">
+                        Precio : $19.90/KG 
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/onions.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Cebolla Amarilla</b><br/>
+                    <div class="item-select">
+                        Precio : $20.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/spinach.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Espinaca Verde</b><br/>
+                    <div class="item-select">
+                        Precio : $27.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/carrots.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Zanahoria Mini</b><br/>
+                    <div class="item-select">
+                        Precio : $34.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                       </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!--Veg end-->
+        <!--Fruit begin-->
+        <div class="deals-container" id="fruits">
+            <div class="parallax">
+                <div class="title">FRUTAS</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/apples.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Manzana Orgánica</b><br/>
+                    <div class="item-select">
+                        Precio : $29.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/kiwi.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Kiwi Hawaiano</b><br/>
+                    <div class="item-select">
+                        Precio : $37.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/dragonfruit.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Fruta Dragón</b><br/>
+                    <div class="item-select">
+                        Precio : $49.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/strawberries.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Fresa de Barrio</b><br/>
+                    <div class="item-select">
+                        Precio : $24.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/melon.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Sandía de los Estercoleros</b><br/>
+                    <div class="item-select">
+                        Precio : $37.49/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/bananas.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Plátano Macho</b><br/>
+                    <div class="item-select">
+                        Precio : $17.49/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!--Fruit end-->
+        <!--Meat begin-->
+        <div class="deals-container" id="meat">
+            <div class="parallax">
+                <div class="title">CARNICERÍA Y MARISCOS</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/chicken.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Pollo Crudo</b><br/>
+                    <div class="item-select">
+                        Precio : $89.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/lamb.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Carne para Asar</b><br/>
+                    <div class="item-select">
+                        Precio : $99.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/prawns.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Camarones Acapulqueños</b><br/>
+                    <div class="item-select">
+                        Precio : $179.99/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="../images/fish.jpg" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Pescado Crudo</b><br/>
+                    <div class="item-select">
+                        Precio : $69.49/KG
+                    </div>
+                    <label>Cant:</label>
+                    <select class="item-select">
+                        <option>1/4 KG</option>
+                        <option>1/2 KG</option>
+                        <option>1 KG</option>
+                        <option>2 KG</option>
+                    </select><br/>
+                    <button class="butnow-btn">Comprar ya</button>
+                    <button class="butnow-btn">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <!--Meat end-->
+       <!--Home Page End-->
+       <!--Footer start-->
+       <div class="parallax1">
+           <div class="footer">
+               <div class="quick-links">
+                   <div>Encuéntranos en:</div>
+                   <ul>
+                    <li><a href="https://maps.app.goo.gl/84kXci5xy8gaherz6" class="a-links">Troncos Ags</a></li>
+                       <li><a href="https://maps.app.goo.gl/jHLo8xVXxxLGPyYw7" class="a-links">C.C. Agropecuario </a></li>
+                       <li><a href="https://maps.app.goo.gl/dcXi3UMWjDjDGHib8" class="a-links">Central Abastos Sur Ags</a></li>
+                   </ul>
+               </div>
+               <div class="quick-links">
+                   <div>Contáctanos</div>
+                   <ul>
+                    <li><a href="#" target="_blank" class="a-links"> Facebook</a></li>
+                    <li><a href="#" target="_blank" class=" a-links"> Twitter</a></li>
+                    <li><a href="#" target="_blank" class="a-links"> Instagram</a></li>
+                </ul>
+               </div>
+               <div class="quick-links">
+                <div>Soporte</div>
+                <ul>
+                    <li><a href="#" class="a-links">Dudas Frecuentes</a></li>
+                    <li><a href="#" class="a-links">Programa de Lealtad</a></li>
+                    <li><a href="#" class="a-links">Asesoramiento Nutricional</a></li>
+                </ul>
+               </div>
+           </div>
+       </div>
+       <div class="copyrights">
+        <div class="footer-bottom">
+            <p>&copy; 2023 Tu Supermercado. Todos los derechos reservados.</p>
+        </div>
+           <span><img src="../images/copyright_PNG59.png">2023 Por LeoMartineZzz</span>
+       </div>
+       <!--Footer end-->
+</body>
+</html>
